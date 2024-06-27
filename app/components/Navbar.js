@@ -66,7 +66,7 @@ export default function Navbar() {
 
           {/* DESKTOP NAV */}
           <Link href="/#" className={styles.undreline}>
-            <div className={styles.titleMainDesktop}>HARTCROWN CONSTRUCTION</div>
+            <div className={styles.titleMainDesktop}>TRABAN CONSTRUCTION</div>
           </Link>
             <nav className={styles.navContainerGrid}>
               <ul className={styles.navDesktopGrid}>
