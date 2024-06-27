@@ -16,7 +16,8 @@
   font-size: 1.5rem;
   font-weight: 500;
   text-align: center;
-  border-radius: 22px;
+  border-radius: 1px;
+  border: solid 1px #fff;
   background: #0e8254;
 }
 
