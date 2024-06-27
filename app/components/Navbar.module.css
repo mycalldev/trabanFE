@@ -1,0 +1,154 @@
+.displayNone {
+    display: none;
+  }
+  
+  .linkBTN {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navDesktopGrid {
+    display: none;
+  }
+  
+  .navContainer {
+  }
+  
+  .containerGrid {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    padding: 30px;
+  }
+  
+  .imageBurger {
+    cursor: pointer;
+  }
+  
+  .undreline {
+    text-decoration: none;
+  }
+  
+  .titleMain {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #000000;
+    cursor: pointer;
+  }
+
+  .titleMain span {
+    color: #017b4b;
+  }
+  
+  .titleHeader {
+    width: 100%;
+    height: auto;
+  }
+  .titleMainDesktop {
+    display: none;
+  }
+  
+  .title {
+    text-decoration: none;
+  }
+  
+  .containerLogo {
+    cursor: pointer;
+  }
+
+  .logo {
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .navOpen {
+    padding: 50px 20px 20px 0px;
+    width: 100vw;
+    background: #a5a4a4;
+  }
+  
+  .unorderedList {
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .listItemContainer {
+    margin: 0px 20px;
+    cursor: pointer;
+  }
+  
+  .listItem {
+    padding: 15px 10px 15px 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .closeMenu {
+    margin: 40px auto 30px auto;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  @media(min-width: 768px) {
+  
+    .navContainer {
+      padding: 0;
+    }
+  
+    .titleMainDesktop {
+      display: block;
+      margin: 30px auto 30px auto;
+      font-size: 2rem;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 700;
+      color: rgb(57, 57, 57);
+      cursor: pointer;
+    }
+  
+    .containerGrid {
+      display: none;
+    }
+  
+    .navContainerGrid {
+      background: #eee;
+    }
+  
+    .navDesktopGrid {
+      margin: 0 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+    } 
+  
+    .unordredListDesktop {
+      display: block;
+    }
+  
+    .listItem {
+      margin: 11px 0 11px 0;
+      font-size: 1.1rem;
+      font-weight: 700;
+      list-style-type: none;
+    }
+  }
+  
+  @media(min-width: 1024px) {
+    .listItem {
+      font-size: 1.3rem;
+    }
+  }

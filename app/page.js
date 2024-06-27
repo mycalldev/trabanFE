@@ -1,95 +1,63 @@
 import Image from "next/image";
+import Link from "next/link"
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <main>
+      <Image
+        src={'/hero_image_home.png'}
+        width={1456}
+        height={816}
+        className={styles.imageHero}
+        alt={'menu bar'}
+        quality={100}
+      />
+
+      <div className={styles.textMain}>
+        At Traban Construction, we bring your vision to life with unparalleled craftsmanship and dedication. 
+        Whether you're planning a new residential development, a commercial building, or a unique custom project, our team of experienced professionals 
+        is here to deliver superior results on time and within budget.
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      {/* CTA */}
+      <div className={styles.contactBTNContainer}>
+        <Link href="tel:" className={styles.linkBTN}>Contact</Link>
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
+      <div className={styles.contactBTNContainer}>
+    <Link
+          href={"https://wa.me/44?text=Hi%20Luxury%20Times...."} 
+          className={styles.linkBTN}
         >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+          WhatsApp
+        </Link>
+    </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+    <div className={styles.titleSub}>Expertise and Experience</div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
+    <Image
+        src={'/about_us.png'}
+        width={1456}
+        height={816}
+        className={styles.imageHero}
+        alt={'menu bar'}
+        quality={100}
+      />
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className={styles.contactBTNContainer}>
+        <Link href={"/about"} className={styles.linkBTN}>About Us</Link>
       </div>
+
+    <div className={styles.titleSub}>Our Services</div>
+    <ul className={styles.containerList}>
+      <li className={styles.listItem}>Residential Construction</li>
+      <li className={styles.listItem}>Commercial Construction</li>
+      <li className={styles.listItem}>Project Management</li>
+      <li className={styles.listItem}>Design and Build</li>
+      <li className={styles.listItem}>Renovations</li>
+    </ul>
+
     </main>
   );
 }
