@@ -43,11 +43,11 @@ export default function Navbar() {
                     <li className={styles.listItem}>Home</li>
                   </div>
                 </Link>
-                <Link href={'/about'} className={styles.linkBTN} prefetch={true}>
+                <a href={'#services'} className={styles.linkBTN} prefetch={true}>
                   <div className={styles.listItemContainer} onClick={() => handleToggle()}>
                     <li className={styles.listItem}>Services</li>
                   </div>
-                </Link>
+                </a>
                 <Link href={'/'} className={styles.linkBTN} prefetch={true}>
                   <div className={styles.listItemContainer} onClick={() => handleToggle()}>
                     <li className={styles.listItem}>Contact</li>

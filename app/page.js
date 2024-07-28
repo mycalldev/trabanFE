@@ -54,7 +54,7 @@ export default function Home() {
         to maintaining the highest standards of quality and safety.
     </div>
 
-    <div className={styles.titleSub}>Our Services</div>
+    <div className={styles.titleSub} id={"services"}>Our Services</div>
     <ul className={styles.containerList}>
       <li className={styles.listItem}>Residential Construction</li>
       <li className={styles.listItem}>Commercial Construction</li>
