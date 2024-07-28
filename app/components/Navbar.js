@@ -17,8 +17,12 @@ export default function Navbar() {
     <main >
       <div className={styles.navContainer}>
         <div className={styles.containerGrid}>
-          
-            <div onClick={() => handleToggle()} className={styles.containerBurger}>
+          <div>
+            <Link href="/#" className={styles.undreline}>
+              <div className={styles.titleMain}><span>Traban</span> Construction</div>
+            </Link>
+          </div>
+          <div onClick={() => handleToggle()} className={styles.containerBurger}>
               <Image
                 src={'/hamburger.png'}
                 width={32}
@@ -27,13 +31,6 @@ export default function Navbar() {
                 alt={'menu bar'}
                 quality={100}
               />
-            </div>
-          
-          <div>
-            <Link href="/#" className={styles.undreline}>
-            
-              <div className={styles.titleMain}><span>Traban</span> Construction</div>
-            </Link>
           </div>
 
         </div>
@@ -48,7 +45,7 @@ export default function Navbar() {
                 </Link>
                 <Link href={'/about'} className={styles.linkBTN} prefetch={true}>
                   <div className={styles.listItemContainer} onClick={() => handleToggle()}>
-                    <li className={styles.listItem}>About</li>
+                    <li className={styles.listItem}>Services</li>
                   </div>
                 </Link>
                 <Link href={'/'} className={styles.linkBTN} prefetch={true}>

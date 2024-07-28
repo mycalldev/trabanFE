@@ -7,6 +7,43 @@
 .imageHero {
   width: 100%;
   height: auto;
+  padding: 0 20px 20px 20px;
+  background-color: #fff;
+  border-radius:  500px;
+}
+
+.imageAbout {
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+  background-color: #fff;
+  border-radius: 0 0 500px 500px;
+}
+
+.imageContact {
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+  background-color: #fff;
+  border-radius: 500px 0 500px 0;
+}
+
+.imageTraban {
+  width: 100%;
+  height: auto;
+  padding: 0 20px 20px 20px;
+  background-color: #fff;
+  border-radius:  500px;
+}
+
+.tagline {
+  width: 80%;
+  margin: auto;
+  background-color: #fff;
+  color: #017b4b;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 .contactBTNContainer {
@@ -37,13 +74,29 @@
 }
 
 .containerList {
-  width: 80%;
-  margin: auto;
+  width: 100%;
+  margin: 0 20px;
 }
 
 .listItem {
   text-align: start;
   margin: 10px 40px;
   font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.containerFooter {
+  margin: 20px;
+}
+
+.footerAddress {
+  width: 80%;
+  margin: 0 auto 20px auto;
+  text-align: start;
+}
+
+.textBold {
+  width: 80%;
+  margin: 20px auto 0 auto;
   font-weight: 600;
 }
