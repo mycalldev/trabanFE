@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main>
       <Image
-        src={'/images/hero_image_home.jpg'}
+        src={'/images/machine_hero.jpg'}
         width={1456}
         height={816}
         className={styles.imageHero}
@@ -37,6 +37,7 @@ export default function Home() {
     </div>
 
     <div className={styles.titleSub}>Expertise and Experience</div>
+    <section className={styles.backgroundContact}>
 
     <Image
       src={'/images/about_us.jpg'}
@@ -47,13 +48,13 @@ export default function Home() {
       quality={100}
     />
 
-    <div className={styles.textMain}>
+    <div className={styles.textMainWhite}>
         With over 25 years in the construction industry, 
         our portfolio showcases a diverse range of successful projects. 
         Our skilled architects, engineers, and builders are committed 
         to maintaining the highest standards of quality and safety.
     </div>
-
+    </section>
     <div className={styles.titleSub} id={"services"}>Our Services</div>
     <ul className={styles.containerList}>
       <li className={styles.listItem}>Residential Construction</li>
@@ -64,10 +65,10 @@ export default function Home() {
       <li className={styles.listItem}>Remediation Works</li>
     </ul>
 
+    <section className={styles.backgroundContact}>
     <div className={styles.contactBTNContainer}>
       <Link href={"/about"} className={styles.linkBTN}>Contact</Link>
     </div>
-
     <Image
         src={'/images/contact_image.jpg'}
         width={1456}
@@ -76,12 +77,8 @@ export default function Home() {
         alt={'menu bar'}
         quality={100}
     />
-    <div className={styles.containerFooter}>
-      <div className={styles.textBold}>&#169; 2018 Traban Construction Limited</div>
-      <div className={styles.textBold}>Address:</div>
-      <div className={styles.footerAddress}>240 Halfway Street, Sidcup, Kent, DA15 8DW</div>
-    </div>
-
+    </section>
+    
     <Image
         src={'/Traban2.svg'}
         width={600}
@@ -90,6 +87,11 @@ export default function Home() {
         alt={'menu bar'}
         quality={100}
     />
+    <div className={styles.containerFooter}>
+      <div className={styles.textBold}>&#169; 2018 Traban Construction Limited</div>
+      <div className={styles.textBold}>Address:</div>
+      <div className={styles.footerAddress}>240 Halfway Street, Sidcup, Kent, DA15 8DW</div>
+    </div>
     </main>
   );
 }
