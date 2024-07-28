@@ -24,12 +24,12 @@ export default function Home() {
 
       {/* CTA */}
       <div className={styles.contactBTNContainer}>
-        <Link href="tel:" className={styles.linkBTN}>Contact</Link>
+        <Link href="tel:07957195902" className={styles.linkBTN}>Contact</Link>
       </div>
 
       <div className={styles.contactBTNContainer}>
     <Link
-          href={"https://wa.me/44?text=Hi%20Luxury%20Times...."} 
+          href={"https://wa.me/447957195902?text=Hi%20Traban%20Construction...."} 
           className={styles.linkBTN}
         >
           WhatsApp
