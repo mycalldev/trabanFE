@@ -48,11 +48,21 @@ export default function Navbar() {
                     <li className={styles.listItem}>Services</li>
                   </div>
                 </a>
-                <Link href={'/'} className={styles.linkBTN} prefetch={true}>
+                <a href={'#previous'} className={styles.linkBTN} prefetch={true}>
+                  <div className={styles.listItemContainer} onClick={() => handleToggle()}>
+                    <li className={styles.listItem}>Previous Works</li>
+                  </div>
+                </a>
+                <a href={'#whytraban'} className={styles.linkBTN} prefetch={true}>
+                  <div className={styles.listItemContainer} onClick={() => handleToggle()}>
+                    <li className={styles.listItem}>Why Choose Traban</li>
+                  </div>
+                </a>
+                <a href={'#contact'} className={styles.linkBTN} prefetch={true}>
                   <div className={styles.listItemContainer} onClick={() => handleToggle()}>
                     <li className={styles.listItem}>Contact</li>
                   </div>
-                </Link>
+                </a>
               </ul>
             <div className={styles.closeMenu} onClick={() => handleToggle()}>Close Menu</div>
           </nav> 
@@ -67,11 +77,11 @@ export default function Navbar() {
           </Link>
             <nav className={styles.navContainerGrid}>
               <ul className={styles.navDesktopGrid}>
-                <Link href={'/'} className={styles.linkBTN} prefetch={true}>
+                {/* <Link href={'/'} className={styles.linkBTN} prefetch={true}>
                     <div className={styles.listItemContainer}>
                       <li className={styles.listItem}>Home</li>
                     </div>
-                </Link>
+                </Link> */}
                 <Link href={'/'} className={styles.linkBTN} prefetch={true}>
                     <div className={styles.listItemContainer}>
                       <li className={styles.listItem}>About</li>
@@ -99,7 +109,6 @@ export default function Navbar() {
                   </Link>
               </ul>
             </nav>
-      
     </main>
   )
 }

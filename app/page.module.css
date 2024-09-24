@@ -62,7 +62,15 @@
   text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
+  margin: 30px auto 20px auto;
+}
+
+.titleSubLight {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
   margin: 20px;
+  color: #fff;
 }
 
 .textMain {
@@ -84,7 +92,8 @@
 
 .containerList {
   width: 100%;
-  margin: 0 20px 20px 20px;
+  margin: 0px 20px 40px 20px;
+  padding-left: 30px;
 }
 
 .listItem {
@@ -111,6 +120,46 @@
 }
 
 .backgroundContact {
-  background-color: rgb(220, 221, 187);
+  background-color: rgb(159, 161, 110);
   padding: 20px;;
 }
+
+.containerImage {
+  margin-top: 20px;
+}
+
+.containerImageTick {
+  display: grid;
+  justify-content: center;
+}
+
+.imageTick {
+  padding: 30px;
+}
+
+.titleLinkedin {
+  margin-top: 45px;
+  text-align: center;
+  color: #212121;
+  font-size: 1.3rem;
+}
+
+.imageLinkedin {
+  padding: 10px;
+}
+
+.email {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.imageJob {
+  width: 100%;
+  height: auto;
+  padding: 10px 50px;
+}
+
+
+  

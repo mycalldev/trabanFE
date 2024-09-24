@@ -1,8 +1,10 @@
+
 import Image from "next/image";
 import Link from "next/link"
 import styles from "./page.module.css";
 
 export default function Home() {
+
   return (
     <main>
       <Image
@@ -28,16 +30,17 @@ export default function Home() {
       </div>
 
       <div className={styles.contactBTNContainer}>
-    <Link
+        <Link
           href={"https://wa.me/447957195902?text=Hi%20Traban%20Construction...."} 
           className={styles.linkBTN}
         >
           WhatsApp
         </Link>
-    </div>
+      </div>
 
-    <div className={styles.titleSub}>Expertise and Experience</div>
+    {/* ABOUT */}
     <section className={styles.backgroundContact}>
+    <div className={styles.titleSubLight}>About Us</div>
 
     <Image
       src={'/images/about_us.jpg'}
@@ -49,26 +52,115 @@ export default function Home() {
     />
 
     <div className={styles.textMainWhite}>
-        With over 25 years in the construction industry, 
-        our portfolio showcases a diverse range of successful projects. 
-        Our skilled architects, engineers, and builders are committed 
-        to maintaining the highest standards of quality and safety.
+        Traban Construction Ltd is a family run business, established in 2009. 
+        The company takes its name from the village on the West Coast of Ireland where the family originates from. 
+    </div>
+    <div className={styles.textMainWhite}>
+      Traban is a groundwork's specialist contractor. With over 25 years experience, 
+      we have built a reputation based on service, expertise and quality.
     </div>
     </section>
+
+    {/* SERVICES */}
     <div className={styles.titleSub} id={"services"}>Our Services</div>
+
+    <div className={styles.textMain}>
+      We offer a personal and professional service of all aspects relating to 
+      groundworks and all other areas of building works, including, but not limited to the following: 
+    </div>
+
     <ul className={styles.containerList}>
-      <li className={styles.listItem}>Residential Construction</li>
-      <li className={styles.listItem}>Commercial Construction</li>
-      <li className={styles.listItem}>Project Management</li>
-      <li className={styles.listItem}>Design and Build</li>
-      <li className={styles.listItem}>Foundations</li>
-      <li className={styles.listItem}>Remediation Works</li>
+      <li className={styles.listItem}>Footings/Foundations</li>
+      <li className={styles.listItem}>Underpinning</li>
+      <li className={styles.listItem}>Piling</li>
+      <li className={styles.listItem}>Basements</li>
+      <li className={styles.listItem}>Bulk Excavation</li>
+      <li className={styles.listItem}>All Aspects of Drainage</li>
+      <li className={styles.listItem}>Reinforced Concreete</li>
+      <li className={styles.listItem}>Demolition</li>
+      <li className={styles.listItem}>Block Paving</li>
+      <li className={styles.listItem}>Kerbing</li>
+      <li className={styles.listItem}>Tarmac</li>
+      <li className={styles.listItem}>Resin</li>
     </ul>
 
-    <section className={styles.backgroundContact}>
-    <div className={styles.contactBTNContainer}>
-      <Link href={"/about"} className={styles.linkBTN}>Contact</Link>
+    <div className={styles.textMain}>
+      We cover all areas of the South East of England, including: London, Surrey, Sussex, Kent, Essex 
     </div>
+
+    <div className={styles.titleSub} id={"previous"}>Previous Works</div>
+
+    <div className={styles.contianerImageGrid}>
+        <Image
+            src={'/jobs/job1.jpg'}
+            width={1080}
+            height={718}
+            className={styles.imageJob}
+            alt={'correct tick'}
+            quality={100}
+        />
+        <Image
+            src={'/jobs/job2.jpg'}
+            width={1080}
+            height={718}
+            className={styles.imageJob}
+            alt={'correct tick'}
+            quality={100}
+        />
+        <Image
+            src={'/jobs/job3.jpg'}
+            width={1080}
+            height={718}
+            className={styles.imageJob}
+            alt={'job 3'}
+            quality={100}
+        /> 
+        <Image
+          src={'/jobs/job4.jpg'}
+          width={1080}
+          height={718}
+          className={styles.imageJob}
+          alt={'job 4'}
+          quality={100}
+        />
+        <Image
+          src={'/jobs/job5.jpg'}
+          width={1080}
+          height={718}
+          className={styles.imageJob}
+          alt={'job 5'}
+          quality={100}
+        />
+    </div>
+
+    <div className={styles.containerImageTick}>
+        <Image
+            src={'/correct_update.png'}
+            width={256}
+            height={256}
+            className={styles.imageTick}
+            alt={'correct tick'}
+            quality={100}
+        />
+    </div>
+
+    {/* WHY TRABAN */}
+    <div className={styles.titleSub} id={"whytraban"}>Why Choose Traban?</div>
+    <div className={styles.textMain}>
+      Our committment to excellence is evident in every project we undertake. 
+      With a focus on safety, environmental responsibilty and customer satisfation, we ensure
+      that every phase of the ground preparation is completed to the highest standards.  
+    </div>
+
+    <div className={styles.textMain}>
+      Whether it&apos;s a small residential project or a large commercial development, 
+      we&apos;ve got the experience, equipment and team to get the job done right!  
+    </div>
+
+
+    <section className={styles.backgroundContact}>
+    <div className={styles.titleSubLight} id={"contact"}>Contact Traban</div>
+
     <Image
         src={'/images/contact_image.jpg'}
         width={1456}
@@ -77,16 +169,46 @@ export default function Home() {
         alt={'menu bar'}
         quality={100}
     />
+    <div className={styles.contactBTNContainer}>
+      <Link href="tel:07957195902" className={styles.linkBTN}>Contact</Link>
+    </div>
+    <div className={styles.contactBTNContainer}>
+        <Link
+          href={"https://wa.me/447957195902?text=Hi%20Traban%20Construction...."} 
+          className={styles.linkBTN}
+        >
+          WhatsApp
+        </Link>
+    </div>
+    <div className={styles.email}>EMAIL: TBCLTD@HOTMAIL.CO.UK</div>
     </section>
-    
-    <Image
-        src={'/Traban2.svg'}
-        width={600}
-        height={600}
-        className={styles.imageTraban}
-        alt={'menu bar'}
-        quality={100}
-    />
+
+    <div className={styles.titleLinkedin}>Visit our Linkedin</div>
+    <Link href={"https://www.linkedin.com/in/martin-folan-9b3699151?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"}>
+    <div className={styles.containerImageTick}>
+        <Image
+            src={'/linkedin.png'}
+            width={128}
+            height={128}
+            className={styles.imageLinkedin}
+            alt={'linkedin icon'}
+            quality={100}
+        />
+    </div>
+    </Link>
+
+
+    {/* CONTACT */}
+    <div className={styles.containerImage}>
+      <Image
+          src={'/Traban2.svg'}
+          width={600}
+          height={600}
+          className={styles.imageTraban}
+          alt={'menu bar'}
+          quality={100}
+      />
+    </div>
     <div className={styles.containerFooter}>
       <div className={styles.textBold}>&#169; 2018 Traban Construction Limited</div>
       <div className={styles.textBold}>Address:</div>
