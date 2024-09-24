@@ -161,5 +161,14 @@
   padding: 10px 50px;
 }
 
+.accGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
 
-  
+
+.imageAcc {
+  width: 100%;
+  height: auto;
+  padding: 60px;
+}

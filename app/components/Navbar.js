@@ -77,11 +77,6 @@ export default function Navbar() {
           </Link>
             <nav className={styles.navContainerGrid}>
               <ul className={styles.navDesktopGrid}>
-                {/* <Link href={'/'} className={styles.linkBTN} prefetch={true}>
-                    <div className={styles.listItemContainer}>
-                      <li className={styles.listItem}>Home</li>
-                    </div>
-                </Link> */}
                 <Link href={'/'} className={styles.linkBTN} prefetch={true}>
                     <div className={styles.listItemContainer}>
                       <li className={styles.listItem}>About</li>

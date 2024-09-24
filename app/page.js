@@ -197,6 +197,25 @@ export default function Home() {
     </div>
     </Link>
 
+    <div className={styles.accGrid}>
+      <Image
+          src={'/acc2.png'}
+          width={758}
+          height={403}
+          className={styles.imageAcc}
+          alt={'linkedin icon'}
+          quality={100}
+      />
+      <Image
+          src={'/gold.png'}
+          width={1181}
+          height={594}
+          className={styles.imageAcc}
+          alt={'linkedin icon'}
+          quality={100}
+      />
+    </div>
+
 
     {/* CONTACT */}
     <div className={styles.containerImage}>
