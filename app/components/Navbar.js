@@ -43,6 +43,11 @@ export default function Navbar() {
                     <li className={styles.listItem}>Home</li>
                   </div>
                 </Link>
+                <a href={'#about'} className={styles.linkBTN} prefetch={true}>
+                  <div className={styles.listItemContainer} onClick={() => handleToggle()}>
+                    <li className={styles.listItem}>About Us</li>
+                  </div>
+                </a>
                 <a href={'#services'} className={styles.linkBTN} prefetch={true}>
                   <div className={styles.listItemContainer} onClick={() => handleToggle()}>
                     <li className={styles.listItem}>Services</li>
@@ -77,31 +82,31 @@ export default function Navbar() {
           </Link>
             <nav className={styles.navContainerGrid}>
               <ul className={styles.navDesktopGrid}>
-                <Link href={'/'} className={styles.linkBTN} prefetch={true}>
-                    <div className={styles.listItemContainer}>
-                      <li className={styles.listItem}>About</li>
-                    </div>
-                </Link>
-                <Link href={'/'} className={styles.linkBTN}>
-                    <div className={styles.listItemContainer}>
-                      <li className={styles.listItem}>Previous Projects</li>
-                    </div>
-                  </Link>
-                  <Link href={'/'} className={styles.linkBTN}>
-                    <div className={styles.listItemContainer}>
-                      <li className={styles.listItem}>Current Projects</li>
-                    </div>
-                  </Link>
-                  <Link href={'/'} className={styles.linkBTN} prefetch={true}>
-                    <div className={styles.listItemContainer}>
-                      <li className={styles.listItem}>Sponsership</li>
-                    </div>
-                  </Link>
-                  <Link href={'/contact'} className={styles.linkBTN}>
-                    <div className={styles.listItemContainer}>
-                      <li className={styles.listItem}>Contact</li>
-                    </div>
-                  </Link>
+                <a href={'#about'} className={styles.linkBTN} prefetch={true}>
+                  <div className={styles.listItemContainer}>
+                    <li className={styles.listItem}>About Us</li>
+                  </div>
+                </a>
+                <a href={'#services'} className={styles.linkBTN} prefetch={true}>
+                  <div className={styles.listItemContainer}>
+                    <li className={styles.listItem}>Services</li>
+                  </div>
+                </a>
+                <a href={'#previous'} className={styles.linkBTN} prefetch={true}>
+                  <div className={styles.listItemContainer}>
+                    <li className={styles.listItem}>Previous Works</li>
+                  </div>
+                </a>
+                <a href={'#whytraban'} className={styles.linkBTN} prefetch={true}>
+                  <div className={styles.listItemContainer}>
+                    <li className={styles.listItem}>Why Choose Traban</li>
+                  </div>
+                </a>
+                <a href={'#contact'} className={styles.linkBTN} prefetch={true}>
+                  <div className={styles.listItemContainer}>
+                    <li className={styles.listItem}>Contact</li>
+                  </div>
+                </a>
               </ul>
             </nav>
     </main>

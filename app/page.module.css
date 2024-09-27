@@ -46,7 +46,27 @@
   text-align: center;
 }
 
+.contactDesktop {
+  display: none;
+}
+
+.contactDesktop1 {
+  display: none;
+}
+
 .contactBTNContainer {
+  margin: 30px auto;
+  padding: 10px;
+  max-width: 200px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 1px;
+  border: solid 1px #fff;
+  background: #0e8254;
+}
+
+.contactWhatsapp {
   margin: 30px auto;
   padding: 10px;
   max-width: 200px;
@@ -119,7 +139,12 @@
   font-weight: 300;
 }
 
-.backgroundContact {
+.containerAbout {
+  background-color: rgb(159, 161, 110);
+  padding: 20px;;
+}
+
+.containerContact {
   background-color: rgb(159, 161, 110);
   padding: 20px;;
 }
@@ -166,9 +191,77 @@
   grid-template-columns: 50% 50%;
 }
 
-
 .imageAcc {
   width: 100%;
   height: auto;
   padding: 60px;
+}
+
+@media(min-width:768px) {
+  .containerHeroImage {
+    width: 60%;
+    margin: 40px auto;
+  }
+  .containerIntro {
+    width: 60%;
+    margin: 40px auto;
+  }
+
+  .containerAbout {
+    width: 90%;
+    margin: 40px auto;
+  }
+
+  .containerPrevious {
+    width: 60%;
+    margin: 40px auto;
+  }
+  
+  .containerWhy {
+    width: 60%;
+    margin: 40px auto;
+  }
+  
+  .containerContact {
+    width: 90%;
+    margin: 40px auto;
+  }
+
+  .containerFooter {
+    width: 60%;
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  .containerTextDesktop {
+    width: 60%;
+    margin: 40px auto;
+  }
+  
+  .contactWhatsapp {
+    display: none;
+  }
+
+  .contactDesktop {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .contactDesktop1 {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  .email {
+    font-size: 1.3rem;
+  }
+
+  .footerAddress {
+    text-align: center;
+    font-size: 1.3rem;
+  }
 }
